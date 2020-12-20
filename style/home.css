@@ -1,3 +1,26 @@
 a:nth-child(1){
     background-color: #c5a0c5;
 }
+.bio{
+    display:flex;
+    justify-content: space-evenly;
+}
+.bio div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bio button{
+    text-decoration: none;
+    border: solid 1px #201320;
+    padding:4px 10px;
+    margin-bottom:20px
+}
+h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.profilepic{
+    max-width:50%;
+    padding-right:2%;
+}
