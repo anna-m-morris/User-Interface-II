@@ -3,6 +3,7 @@ a:nth-child(1){
 }
 .bio{
     display:flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 .bio div{
@@ -11,16 +12,31 @@ a:nth-child(1){
     justify-content: flex-end;
 }
 .bio button{
+    width: 155px;
     text-decoration: none;
     border: solid 1px #201320;
     padding:4px 10px;
     margin-bottom:20px
+}
+.bio button:hover{
+    background-color:thistle;
+    box-shadow: 1px 1px 3px #201320;
 }
 h2{
     font-size: 30px;
     padding-bottom: 20px;
 }
 .profilepic{
-    max-width:50%;
+    width: 100%;
     padding-right:2%;
+}
+@media (min-width:400px){
+    .bio{
+        flex-direction:row;
+    }
+    .profilepic{
+        width:300px;
+        max-width: 50%;
+        padding-left:2%;
+    }
 }
