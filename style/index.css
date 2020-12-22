@@ -53,20 +53,23 @@ table {
     background-color: snow;
 }
 header{
+    display:flex;
+    flex-direction:column;
     background-color: thistle;
     box-shadow: 0px 15px 15px 0px;
+    height:100px;
+    justify-content: space-evenly;
     padding:2%;
 }
 h1{
-    background-color: inherit;
+    background-color: thistle;
     font-size:45px;
 }
 nav{
+    align-self:center;
     max-width: 100%;
-    min-height: 25px;
-    background-color: inherit;
+    background-color: thistle;
     padding:2%;
-    padding-bottom:0;
 }
 a{
     text-decoration: none;
@@ -90,4 +93,9 @@ nav a:hover{
 }
 article{
     padding: 2%;
+}
+@media (min-width:400px){
+    nav{
+        align-self:flex-start;
+    }
 }
